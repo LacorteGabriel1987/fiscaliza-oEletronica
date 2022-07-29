@@ -4,14 +4,47 @@
     padding: 0;
 }
 
+/* Titulo */
+.title {
+    font-size: 40px;
+}
+
+/* Titulo e barra de velocidade*/
+.title, .max, .velcar{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Velocidade permitida*/
+.max{
+    font-size: 30px;
+    
+}
+
+.velcar > input{
+    padding: 5px 15px;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
 /* Sky Styling */
 .sky {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-image: url(img/sky.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
+    
+}
+
+.resposta{
+    grid-area: 3 / 2 / 4 / 3;
+    line-height: 1.5;
+    text-align: center;
+    width: 500px;
+    margin-left: 450px;
+    padding: 10px;
 }
 
 /* Tree Styling and positioning */
@@ -20,5 +53,6 @@
     background-image: url(img/tree-removebg-preview\ \(1\).png);
     background-repeat:no-repeat;
     background-size: cover;
+    
 }
 

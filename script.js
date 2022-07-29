@@ -2,6 +2,7 @@ function calcular () {
     var textv = window.document.getElementById("textvel")
     var res = window.document.getElementById("res")
     var vel = Number(textv.value)
+    res.style.borderRadius = '20px'
     res.innerHTML = `<p> Sua velocidade atual é de <strong>${vel} km/h.</strong></p>`;
 
     if (vel < 0 ) {
@@ -14,7 +15,7 @@ function calcular () {
 
     }   if (vel > 60){
 
-        res.innerHTML += `<p> [ERRO] Você está <strong> MULTADO</strong> por excesso de velocidade </p>`;
+        res.innerHTML += `<p> Você está <strong> MULTADO</strong> por excesso de velocidade </p>`;
         res.style.background = 'red'
     }
 
